@@ -2,7 +2,7 @@
 
 [WebViewer](https://www.pdftron.com/webviewer) is a powerful JavaScript-based PDF Library that's part of the [PDFTron PDF SDK](https://www.pdftron.com). It provides a slick out-of-the-box responsive UI that interacts with the core library to view, annotate and manipulate PDFs that can be embedded into any web project.
 
-![WebViewer UI](https://www.pdftron.com/downloads/pl/webviewer-ui.png)
+![WebViewer UI](/PDFTron/webviewer-blazor-sample/raw/master/sample.png)
 
 This repo is specifically designed for any users interested in integrating WebViewer into a Blazor project. This project was integrated using the [Blazor server-sided application template](https://docs.microsoft.com/en-us/aspnet/core/blazor/get-started?view=aspnetcore-3.0&tabs=visual-studio).
 
