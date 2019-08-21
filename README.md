@@ -1,6 +1,6 @@
 # WebViewer - Blazor Sample
 
-WebViewer[WebViewer](https://www.pdftron.com/webviewer) is a powerful JavaScript-based PDF Library that's part of the [PDFTron PDF SDK](https://www.pdftron.com). It provides a slick out-of-the-box responsive UI that interacts with the core library to view, annotate and manipulate PDFs that can be embedded into any web project.
+[WebViewer](https://www.pdftron.com/webviewer) is a powerful JavaScript-based PDF Library that's part of the [PDFTron PDF SDK](https://www.pdftron.com). It provides a slick out-of-the-box responsive UI that interacts with the core library to view, annotate and manipulate PDFs that can be embedded into any web project.
 
 ![WebViewer UI](https://www.pdftron.com/downloads/pl/webviewer-ui.png)
 
@@ -33,20 +33,20 @@ See [API documentation](https://www.pdftron.com/documentation/web/guides/ui/apis
 
 PDFNetJS Full is a complete browser side PDF SDK, unlocking viewing, parsing and editing of PDF files. To enable full API, you can modify constructor in `wwwroot/js/webviewerScripts.js`:
 
-```
+```diff
 initWebViewer: function () {
     const viewerElement = document.getElementById('viewer');
     WebViewer({
         path: 'WebViewer/lib',
         initialDoc: 'https://pdftron.s3.amazonaws.com/downloads/pl/demo-annotated.pdf', // replace with your own PDF file
-        fullAPI: true
++        fullAPI: true
     }, viewerElement).then((instance) => {
         // call APIs here
     })
 }
 ```
 
-You can refer to this [guide for more information](https://www.pdftron.com/documentation/web/guides/pdfnetjsfull-getting-started)
+You can refer to this [guide for more information](https://www.pdftron.com/documentation/web/guides/pdfnetjsfull-getting-started).
 
 ## Contributing
 
