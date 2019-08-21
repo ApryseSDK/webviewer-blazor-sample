@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div>
+          <a href="https://pdftron.com" target="_blank">
+            <div class="logo"></div>
+          </a>
+          <span class="title">WebViewer</span>
+        </div>
+        <div>
+          <a class="button" href="https://pdftron.com/documentation/web/guides/" target="_blank">Go to Guides</a>
+          <a class="button filled" href="https://pdftron.com/form/contact-sales/" target="_blank">Contact Sales</a>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="sidebar">
+<p><b>Samples</b></p>
+<p><a href=".." target="_self">Viewing</a></p>
+<p><a href="../annotation" target="_self">Annotation</a></p>
+<p><a href="../customization" target="_self">Customization</a></p>
+<p><a href="../pdf-manipulation" target="_self">PDF manipulation</a></p>
+<p><a href="../advanced" target="_self">Advanced</a></p>
+<p><a href="../full-apis" target="_self">Full apis</a></p>
+<p><a href="../project-integration" class="active" target="_self">Project integration</a></p>
+<p><b>Showcase</b></p>
+<p><a href="https://pdftron.com/webviewer/demo" target="_blank">Go to showcase</a></p>
+
+      </div>
+      <div class="content">
+        <div id="error-message" style="display: none; background-color: red; color: white">Samples are not runnable from the file system. Please run using "npm start" or use a local web server.</div>
+<h1>Project integration samples</h1>
+<h4>React</h4>
+Github repo that demonstrates how to integrate WebViewer into a <a href="https://reactjs.org/" target="_blank">React</a> project.
+
+<div class='inline'>
+<a href='https://github.com/PDFTron/webviewer-react-sample' target='_blank'>View Source Code</a>
+</div>
+
+<h4>Angular</h4>
+Github repo that demonstrates how to integrate WebViewer into an <a href="https://angularjs.org/" target="_blank">Angular</a> project.
+
+<div class='inline'>
+<a href='https://github.com/PDFTron/webviewer-angular-sample' target='_blank'>View Source Code</a>
+</div>
+
+<h4>Cordova</h4>
+Github repo that demonstrates how to integrate WebViewer into a <a href="https://cordova.apache.org/" target="_blank">Cordova</a> project.
+
+<div class='inline'>
+<a href='https://github.com/PDFTron/webviewer-cordova-sample' target='_blank'>View Source Code</a>
+</div>
+
+<h4>Electron</h4>
+Github repo that demonstrates how to integrate WebViewer into an <a href="https://electronjs.org/" target="_blank">Electron</a> project.
+
+<div class='inline'>
+<a href='https://github.com/PDFTron/webviewer-electron-sample' target='_blank'>View Source Code</a>
+</div>
+
+<h4>Salesforce</h4>
+Github repo that demonstrates how to integrate WebViewer into <a href="https://trailhead.salesforce.com/en/content/learn/projects/quick-start-lightning-web-components" target="_blank">Salesforce as a Lightning Web Component</a>.
+
+<div class='inline'>
+<a href='https://github.com/PDFTron/webviewer-salesforce' target='_blank'>View Source Code</a>
+</div>
+
+<h4>Android</h4>
+In the download package, go to `WebViewer/samples/advanced/android` for the source code.
+
+<h4>iOS</h4>
+In the download package, go to `WebViewer/samples/advanced/ios` for the source code.
+
+<h4>UWP</h4>
+In the download package, go to `WebViewer/samples/advanced/uwp` for the source code.
+      </div>
+    </section>
+    <script>
+    if (window.location.href.indexOf('file://') === 0) {
+      alert('Samples are not runnable from the file system. Please run using "npm start" or use a local web server.');
+      document.getElementById('error-message').style.display = 'block';
+    }
+    </script>
+  </body>
+</html>

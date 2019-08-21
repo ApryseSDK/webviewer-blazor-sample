@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div>
+          <a href="https://pdftron.com" target="_blank">
+            <div class="logo"></div>
+          </a>
+          <span class="title">WebViewer</span>
+        </div>
+        <div>
+          <a class="button" href="https://pdftron.com/documentation/web/guides/" target="_blank">Go to Guides</a>
+          <a class="button filled" href="https://pdftron.com/form/contact-sales/" target="_blank">Contact Sales</a>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="sidebar">
+<p><b>Samples</b></p>
+<p><a href=".." target="_self">Viewing</a></p>
+<p><a href="../annotation" class="active" target="_self">Annotation</a></p>
+<p><a href="../customization" target="_self">Customization</a></p>
+<p><a href="../pdf-manipulation" target="_self">PDF manipulation</a></p>
+<p><a href="../advanced" target="_self">Advanced</a></p>
+<p><a href="../full-apis" target="_self">Full apis</a></p>
+<p><a href="../project-integration" target="_self">Project integration</a></p>
+<p><b>Showcase</b></p>
+<p><a href="https://pdftron.com/webviewer/demo" target="_blank">Go to showcase</a></p>
+
+      </div>
+      <div class="content">
+        <div id="error-message" style="display: none; background-color: red; color: white">Samples are not runnable from the file system. Please run using "npm start" or use a local web server.</div>
+<h1>Annotation samples</h1>
+<h4>Users and permissions</h4>
+Describes types of permissions and switching between users. You can also show/hide annotations of specific users.
+
+<div class='inline'>
+<a href='../annotation/users-and-permissions/'>Launch Demo</a>
+<a href='../annotation/users-and-permissions/users-and-permissions.js'>View Source Code</a>
+</div>
+
+<h4>Realtime collaboration - Node.js</h4>
+An example setup with Node.js backend.
+
+<div class='inline'>
+<a href='https://github.com/PDFTron/webviewer-realtime-collaboration-sqlite3-sample'>View Source Code</a>
+</div>
+
+<h4>Realtime collaboration - Firebase</h4>
+An example setup with Firebase backend. For more details, refer to realtime collaboration guide.
+
+<div class='inline'>
+<a href='../annotation/realtime-collaboration/'>Launch Demo</a>
+<a href='../annotation/realtime-collaboration/realtime-collaboration.js'>View Source Code</a>
+</div>
+
+<h4>Custom annotations</h4>
+Shows how to create and add custom annotations by extending the existing annotation classes.
+
+<div class='inline'>
+<a href='../annotation/custom-annotations/'>Launch Demo</a>
+<a href='../annotation/custom-annotations/custom-annotations.js'>View Source Code</a>
+</div>
+
+      </div>
+    </section>
+    <script>
+    if (window.location.href.indexOf('file://') === 0) {
+      alert('Samples are not runnable from the file system. Please run using "npm start" or use a local web server.');
+      document.getElementById('error-message').style.display = 'block';
+    }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'>
+    <link rel='stylesheet' href='../../style.css'>
+
+    <script src='../../../lib/webviewer.min.js'></script>
+    <script src='../../old-browser-checker.js'></script>
+  </head>
+  <body>
+    <header>
+      <div class="title sample">Preloading sample</div>
+    </header>
+    <aside>
+      <h1>Controls</h1>
+      <h2>Select a preloaded document</h2>
+      <div id="preload">
+        <ul id="documents" style="padding: 0"></ul>
+      </div>
+      <h2>Show/hide WebViewer</h2>
+      <button id="toggle">Toggle viewer</button>
+      <h1>Instructions</h1>
+      <p>This sample preloads the WebViewer and the documents ahead of time. Use the controls to display a a preloaded document. It will load faster then normal because resources were already loaded.</p>
+    </aside>
+    <div id="viewer" style="overflow: hidden; visibility: hidden"></div>
+    <script src="preloading.js"></script>
+  </body>
+</html>

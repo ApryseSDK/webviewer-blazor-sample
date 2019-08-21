@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div>
+          <a href="https://pdftron.com" target="_blank">
+            <div class="logo"></div>
+          </a>
+          <span class="title">WebViewer</span>
+        </div>
+        <div>
+          <a class="button" href="https://pdftron.com/documentation/web/guides/" target="_blank">Go to Guides</a>
+          <a class="button filled" href="https://pdftron.com/form/contact-sales/" target="_blank">Contact Sales</a>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="sidebar">
+<p><b>Samples</b></p>
+<p><a href=".." target="_self">Viewing</a></p>
+<p><a href="../annotation" target="_self">Annotation</a></p>
+<p><a href="../customization" target="_self">Customization</a></p>
+<p><a href="../pdf-manipulation" target="_self">PDF manipulation</a></p>
+<p><a href="../advanced" target="_self">Advanced</a></p>
+<p><a href="../full-apis" class="active" target="_self">Full apis</a></p>
+<p><a href="../project-integration" target="_self">Project integration</a></p>
+<p><b>Showcase</b></p>
+<p><a href="https://pdftron.com/webviewer/demo" target="_blank">Go to showcase</a></p>
+
+      </div>
+      <div class="content">
+        <div id="error-message" style="display: none; background-color: red; color: white">Samples are not runnable from the file system. Please run using "npm start" or use a local web server.</div>
+<h1>Full API samples</h1>
+<h2>Viewer samples</h2>
+<h4>ViewerCustomSave</h4>This sample demonstrates how to customize document save/download. In the example annotations are flattened before saving.
+
+<div class='inline'>
+<a href='../full-apis/ViewerCustomSaveTest'>Launch Demo</a>
+<a href='../full-apis/ViewerCustomSaveTest/config.js'>View Source Code</a>
+</div>
+
+
+<h4>ViewerDisplayPoints</h4>This sample demonstrates how to use PDFNetJS to select elements in a PDF document. Click on an element in the PDF and it will show the element's bounding box and an outline if it is a PDF path.
+
+<div class='inline'>
+<a href='../full-apis/ViewerDisplayPointsTest'>Launch Demo</a>
+<a href='../full-apis/ViewerDisplayPointsTest/config.js'>View Source Code</a>
+</div>
+
+<h4>ViewerEdit</h4>This sample illustrates how PDFNetJS can be used to perform complex editing on PDF documents as they are displayed in the WebViewer. Open a PDF of your choice and press the refresh button at the top right to change all text to blue and all images to red.
+
+<div class='inline'>
+<a href='../full-apis/ViewerEditTest'>Launch Demo</a>
+<a href='../full-apis/ViewerEditTest/config.js'>View Source Code</a>
+</div>
+
+<h4>ViewerFormBuilder</h4>This sample demonstrates how to add form fields to a PDF. Fields are first added as annotations and then converted to interactive form fields.
+
+<div class='inline'>
+<a href='../full-apis/ViewerFormBuilderTest'>Launch Demo</a>
+<a href='../full-apis/ViewerFormBuilderTest/config.js'>View Source Code</a>
+</div>
+
+<h4>ViewerRedact</h4>This sample illustrates how PDFNetJS can be used to redact elements on PDF documents as they are displayed in the WebViewer. Open a PDF of your choice and drag-select regions on the PDF document to redact.
+
+<div class='inline'>
+<a href='../full-apis/ViewerRedactTest'>Launch Demo</a>
+<a href='../full-apis/ViewerRedactTest/config.js'>View Source Code</a>
+</div>
+
+<h4>ViewerPreprocess</h4>This sample illustrates how PDFNetJS can be used to preprocess a document before displaying it with WebViewer.
+
+<div class='inline'>
+<a href='../full-apis/ViewerPreprocessTest'>Launch Demo</a>
+<a href='../full-apis/ViewerPreprocessTest/config.js'>View Source Code</a>
+</div>
+
+<h4>ViewerPDFDiffTest</h4>This sample illustrates how PDFNetJS can be used to compare two PDF documents and show their difference in WebViewer.
+
+<div class='inline'>
+<a href='../full-apis/ViewerPDFDiffTest'>Launch Demo</a>
+<a href='../full-apis/ViewerPDFDiffTest/config.js'>View Source Code</a>
+</div>
+
+<h4>ViewerSnapToNearestTest</h4>This sample illustrates how to use the snap API for calculating the nearest snap point.
+
+<div class='inline'>
+<a href='../full-apis/ViewerSnapToNearestTest'>Launch Demo</a>
+<a href='../full-apis/ViewerSnapToNearestTest/config.js'>View Source Code</a>
+</div>
+
+<h4>deck.js</h4>This sample illustrates how PDFNetJS can be used to power deck.js slideshows in the same way WebViewer does using PDFNet rasterizing functions.
+
+<div class='inline'>
+<a href='../full-apis/DeckJSTest'>Launch Demo</a>
+</div>
+
+<h2>Console samples</h2>
+<h4>AddImage</h4>This sample illustrates how to embed various raster image formats (e.g. TIFF, JPEG, JPEG2000, JBIG2, GIF, PNG, BMP, etc.) in a PDF document.
+
+<div class='inline'>
+<a href='../full-apis/AddImageTest'>Launch Demo</a>
+<a href='../full-apis/AddImageTest/AddImageTest.js'>View Source Code</a>
+</div>
+
+<h4>Annotation</h4>Shows how to add a text annotation to an existing page and how to create link annotations between several pages.
+
+<div class='inline'>
+<a href='../full-apis/AnnotationTest'>Launch Demo</a>
+<a href='../full-apis/AnnotationTest/AnnotationTest.js'>View Source Code</a>
+</div>
+
+<h4>Bookmark</h4>The sample code illustrates how to read and edit existing outline items and create new bookmarks using the high-level API.
+
+<div class='inline'>
+<a href='../full-apis/BookmarkTest'>Launch Demo</a>
+<a href='../full-apis/BookmarkTest/BookmarkTest.js'>View Source Code</a>
+</div>
+
+<h4>ContentReplacer</h4>The sample demonstrates replacement of objects such as images, text and strings within a document.
+
+<div class='inline'>
+<a href='../full-apis/ContentReplacerTest'>Launch Demo</a>
+<a href='../full-apis/ContentReplacerTest/ContentReplacerTest.js'>View Source Code</a>
+</div>
+
+<h4>DigitalSignature</h4>Demonstrates how to digitally sign a PDF and also how to certify a PDF doc.
+
+<div class='inline'>
+<a href='../full-apis/DigitalSignatureTest'>Launch Demo</a>
+<a href='../full-apis/DigitalSignatureTest/DigitalSignatureTest.js'>View Source Code</a>
+</div>
+
+<h4>ElementBuilder</h4>Illustrates how to use PDFNet page writing API, how to embed fonts and images and how to copy graphical elements from one page to another.
+
+<div class='inline'>
+<a href='../full-apis/ElementBuilderTest'>Launch Demo</a>
+<a href='../full-apis/ElementBuilderTest/ElementBuilderTest.js'>View Source Code</a>
+</div>
+
+
+<h4>ElementEdit</h4>The sample code shows how to edit the page display list and how to modify graphics state attributes on existing Elements. In particular the sample program strips all images from the page and changes text color to blue.
+
+<div class='inline'>
+<a href='../full-apis/ElementEditTest'>Launch Demo</a>
+<a href='../full-apis/ElementEditTest/ElementEditTest.js'>View Source Code</a>
+</div>
+
+<h4>ElementReader</h4>Illustrates how to traverse page display list using ElementReader.
+
+<div class='inline'>
+<a href='../full-apis/ElementReaderTest'>Launch Demo</a>
+<a href='../full-apis/ElementReaderTest/ElementReaderTest.js'>View Source Code</a>
+</div>
+
+<h4>Encryption</h4>Demonstrates how to encrypt and decrypt files by adding or removing passwords.
+
+<div class='inline'>
+<a href='../full-apis/EncTest'>Launch Demo</a>
+<a href='../full-apis/EncTest/EncTest.js'>View Source Code</a>
+</div>
+
+<h4>XFDF Import</h4>PDFNet includes full support for FDF (Forms Data Format) and the capability to merge/extract forms data (FDF) with/from PDF. The sample illustrates basic XFDF merge functionality available in PDFNet.
+
+<div class='inline'>
+<a href='../full-apis/FDFTest'>Launch Demo</a>
+<a href='../full-apis/FDFTest/FDFTest.js'>View Source Code</a>
+</div>
+
+<h4>InteractiveForms</h4>Illustrates how to create and edit interactive forms (check boxes and text boxes).
+
+<div class='inline'>
+<a href='../full-apis/InteractiveFormsTest'>Launch Demo</a>
+<a href='../full-apis/InteractiveFormsTest/InteractiveFormsTest.js'>View Source Code</a>
+</div>
+
+<h4>LogicalStructure</h4>This sample illustrates how to traverse the structure and content of a tagged PDF document.
+
+<div class='inline'>
+<a href='../full-apis/LogicalStructureTest'>Launch Demo</a>
+<a href='../full-apis/LogicalStructureTest/LogicalStructureTest.js'>View Source Code</a>
+</div>
+
+<h4>OfficeToPDF</h4>This sample illustrates how to convert office files to PDF using PDFNetJS.
+
+<div class='inline'>
+<a href='../full-apis/OfficeToPDFTest'>Launch Demo</a>
+<a href='../full-apis/OfficeToPDFTest/OfficeToPDFTest.js'>View Source Code</a>
+</div>
+
+<h4>PDFA</h4>This sample demonstrates PDFA verification and conversion.
+
+<div class='inline'>
+<a href='../full-apis/PDFATest'>Launch Demo</a>
+<a href='../full-apis/PDFATest/PDFATest.js'>View Source Code</a>
+</div>
+
+<h4>PDFDraw</h4>This sample illustrates how to use the built-in rasterizer in order to render PDF images on the fly and how to save resulting images in PNG and JPEG format.
+
+<div class='inline'>
+<a href='../full-apis/PDFDrawTest'>Launch Demo</a>
+<a href='../full-apis/PDFDrawTest/PDFDrawTest.js'>View Source Code</a>
+</div>
+
+<h4>PDFLayers</h4>This sample demonstrates how to create PDF layers (also known as Optional Content Groups - OCGs). The sample also shows how to extract and render PDF layers.
+
+<div class='inline'>
+<a href='../full-apis/PDFLayersTest'>Launch Demo</a>
+<a href='../full-apis/PDFLayersTest/PDFLayersTest.js'>View Source Code</a>
+</div>
+
+<h4>PDFPage</h4>The sample illustrates how to copy pages from one document to another, how to delete, and re-arrange pages and how to use ImportPages() method for very efficient copy and merge operations.
+
+<div class='inline'>
+<a href='../full-apis/PDFPageTest'>Launch Demo</a>
+<a href='../full-apis/PDFPageTest/PDFPageTest.js'>View Source Code</a>
+</div>
+
+<h4>PDFRedaction</h4>The sample illustrates how to create Redaction objects and use PDFNetJS's redact function to remove and overlay PDF document content.
+
+<div class='inline'>
+<a href='../full-apis/PDFRedactTest'>Launch Demo</a>
+<a href='../full-apis/PDFRedactTest/PDFRedactTest.js'>View Source Code</a>
+</div>
+
+<h4>PDFRect</h4>The sample illustrates how to translate a PDF image by extracting and manipulating the image's media box.
+
+<div class='inline'>
+<a href='../full-apis/RectTest'>Launch Demo</a>
+<a href='../full-apis/RectTest/RectTest.js'>View Source Code</a>
+</div>
+
+<h4>SDFTest</h4>The sample illustrates how to extract an SDF document from a PDF document and change some of its values.
+
+<div class='inline'>
+<a href='../full-apis/SDFTest'>Launch Demo</a>
+<a href='../full-apis/SDFTest/SDFTest.js'>View Source Code</a>
+</div>
+
+<h4>Stamper</h4>The sample code illustrates how to stamp text and images onto various pages in a PDF document.
+
+<div class='inline'>
+<a href='../full-apis/StamperTest'>Launch Demo</a>
+<a href='../full-apis/StamperTest/StamperTest.js'>View Source Code</a>
+</div>
+
+<h4>TextExtraction</h4>The sample demonstrates how to extract information from text boxes such as their position, font, size, color and of course the text itself.
+
+<div class='inline'>
+<a href='../full-apis/TextExtractTest'>Launch Demo</a>
+<a href='../full-apis/TextExtractTest/TextExtractTest.js'>View Source Code</a>
+</div>
+
+<h4>TextSearch</h4>The sample demonstrates how to search using strings and regular expressions in a PDF document and how to set search mode and parameters.
+
+<div class='inline'>
+<a href='../full-apis/TextSearchTest'>Launch Demo</a>
+<a href='../full-apis/TextSearchTest/TextSearchTest.js'>View Source Code</a>
+</div>
+
+<h4>WebViewerConvert</h4>The sample is using `pdftron.PDF.Convert.ToXod()` to convert/stream PDF, XPS, MS Office, RTF, HTML and other document formats to WebViewer.
+
+<div class='inline'>
+<a href='../full-apis/WebViewerConvertTest'>Launch Demo</a>
+<a href='../full-apis/WebViewerConvertTest/WebViewerConvertTest.js'>View Source Code</a>
+</div>
+      </div>
+    </section>
+    <script>
+    if (window.location.href.indexOf('file://') === 0) {
+      alert('Samples are not runnable from the file system. Please run using "npm start" or use a local web server.');
+      document.getElementById('error-message').style.display = 'block';
+    }
+    </script>
+  </body>
+</html>

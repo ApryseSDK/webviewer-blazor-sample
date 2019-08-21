@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div>
+          <a href="https://pdftron.com" target="_blank">
+            <div class="logo"></div>
+          </a>
+          <span class="title">WebViewer</span>
+        </div>
+        <div>
+          <a class="button" href="https://pdftron.com/documentation/web/guides/" target="_blank">Go to Guides</a>
+          <a class="button filled" href="https://pdftron.com/form/contact-sales/" target="_blank">Contact Sales</a>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="sidebar">
+<p><b>Samples</b></p>
+<p><a href=".." target="_self">Viewing</a></p>
+<p><a href="../annotation" target="_self">Annotation</a></p>
+<p><a href="../customization" target="_self">Customization</a></p>
+<p><a href="../pdf-manipulation" class="active" target="_self">PDF manipulation</a></p>
+<p><a href="../advanced" target="_self">Advanced</a></p>
+<p><a href="../full-apis" target="_self">Full apis</a></p>
+<p><a href="../project-integration" target="_self">Project integration</a></p>
+<p><b>Showcase</b></p>
+<p><a href="https://pdftron.com/webviewer/demo" target="_blank">Go to showcase</a></p>
+
+      </div>
+      <div class="content">
+        <div id="error-message" style="display: none; background-color: red; color: white">Samples are not runnable from the file system. Please run using "npm start" or use a local web server.</div>
+<h1>PDF manipulation samples</h1>
+<h4>Page operations</h4>
+Shows how to rotate/crop/add/delete page, change page order, insert blank pages and merge multiple documents.
+
+<div class='inline'>
+<a href='../pdf-manipulation/page-operations/'>Launch Demo</a>
+<a href='../pdf-manipulation/page-operations/page-operations.js'>View Source Code</a>
+</div>
+
+
+<h4>Layer separation</h4>
+Shows how to get each layer's information. You can also show/hide specific layers.
+
+<div class='inline'>
+<a href='../pdf-manipulation/layer-separation/'>Launch Demo</a>
+<a href='../pdf-manipulation/layer-separation/layer-separation.js'>View Source Code</a>
+</div>
+
+<h4>Color separation</h4>
+Shows how to get each color's information. You can also show/hide specific colors.
+
+<div class='inline'>
+<a href='../pdf-manipulation/color-separation/'>Launch Demo</a>
+<a href='../pdf-manipulation/color-separation/color-separation.js'>View Source Code</a>
+</div>
+      </div>
+    </section>
+    <script>
+    if (window.location.href.indexOf('file://') === 0) {
+      alert('Samples are not runnable from the file system. Please run using "npm start" or use a local web server.');
+      document.getElementById('error-message').style.display = 'block';
+    }
+    </script>
+  </body>
+</html>

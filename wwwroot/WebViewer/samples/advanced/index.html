@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div>
+          <a href="https://pdftron.com" target="_blank">
+            <div class="logo"></div>
+          </a>
+          <span class="title">WebViewer</span>
+        </div>
+        <div>
+          <a class="button" href="https://pdftron.com/documentation/web/guides/" target="_blank">Go to Guides</a>
+          <a class="button filled" href="https://pdftron.com/form/contact-sales/" target="_blank">Contact Sales</a>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="sidebar">
+<p><b>Samples</b></p>
+<p><a href=".." target="_self">Viewing</a></p>
+<p><a href="../annotation" target="_self">Annotation</a></p>
+<p><a href="../customization" target="_self">Customization</a></p>
+<p><a href="../pdf-manipulation" target="_self">PDF manipulation</a></p>
+<p><a href="../advanced" class="active" target="_self">Advanced</a></p>
+<p><a href="../full-apis" target="_self">Full apis</a></p>
+<p><a href="../project-integration" target="_self">Project integration</a></p>
+<p><b>Showcase</b></p>
+<p><a href="https://pdftron.com/webviewer/demo" target="_blank">Go to showcase</a></p>
+
+      </div>
+      <div class="content">
+        <div id="error-message" style="display: none; background-color: red; color: white">Samples are not runnable from the file system. Please run using "npm start" or use a local web server.</div>
+<h1>Advanced samples</h1>
+<h4>Preloading</h4>
+Shows how to preload WebViewer and documents to improve user experience.
+
+<div class='inline'>
+<a href='../advanced/preloading/'>Launch Demo</a>
+<a href='../advanced/preloading/preloading.js'>View Source Code</a>
+</div>
+
+<h4>Text position</h4>
+Shows how to extract text positions from a document. The sample highlights the positions with different colors.
+
+<div class='inline'>
+<a href='../advanced/text-position/'>Launch Demo</a>
+<a href='../advanced/text-position/text-position.js'>View Source Code</a>
+</div>
+
+<h4>Redaction</h4>
+Shows how to redact and permanently remove text, images or graphics from a document.
+
+<div class='inline'>
+<a href='../advanced/redaction/'>Launch Demo</a>
+<a href='../advanced/redaction/redaction-viewer.js'>View Source Code</a>
+</div>
+
+<h4>Diff Documents</h4>
+Shows how to render three synchronized panels where the middle panel shows pixel differences between the two documents.
+
+<div class='inline'>
+<a href='../advanced/diff/'>Launch Demo</a>
+<a href='../advanced/diff/diff.js'>View Source Code</a>
+</div>
+
+<h4>Measurement Annotations</h4>
+Shows how to create annotations that measure distance, perimeter and area.
+
+<div class='inline'>
+<a href='../advanced/measurement/'>Launch Demo</a>
+<a href='../advanced/measurement/measurement-viewer.js'>View Source Code</a>
+</div>
+
+<h4>Flipbook</h4>
+Demonstrates how to extract canvas of each page. The sample uses <a href="http://www.turnjs.com/" target="_blank">turn.js</a> to render them.
+
+<div class='inline'>
+<a href='../advanced/flipbook/'>Launch Demo</a>
+<a href='../advanced/flipbook/flipbook.js'>View Source Code</a>
+</div>
+
+<h4>Offline</h4>
+Demonstrates how to use ServiceWorker to use WebViewer offline. 
+
+<div class='inline'>
+<a href='https://github.com/PDFTron/webviewer-offline-sample'>View Source Code</a>
+</div>
+      </div>
+    </section>
+    <script>
+    if (window.location.href.indexOf('file://') === 0) {
+      alert('Samples are not runnable from the file system. Please run using "npm start" or use a local web server.');
+      document.getElementById('error-message').style.display = 'block';
+    }
+    </script>
+  </body>
+</html>
