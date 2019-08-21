@@ -48,10 +48,6 @@ initWebViewer: function () {
 
 You can refer to this [guide for more information](https://www.pdftron.com/documentation/web/guides/pdfnetjsfull-getting-started).
 
-## Contributing
-
-See [contributing](./CONTRIBUTING.md).
-
 ## License
 
 See [license](./LICENSE).
