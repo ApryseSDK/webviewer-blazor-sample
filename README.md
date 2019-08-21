@@ -23,7 +23,7 @@ cd webviewer-blazor-sample
 dotnet run
 ```
 
-Navigate to `https://localhost:5001/webviewer`.
+Navigate to `https://localhost:5001/webviewer`
 
 ## WebViewer APIs
 
@@ -46,7 +46,7 @@ initWebViewer: function () {
 }
 ```
 
-You can refer to this [guide for more information](https://www.pdftron.com/documentation/web/guides/pdfnetjsfull-getting-started).
+You can refer to this [guide for more information](https://www.pdftron.com/documentation/web/guides/pdfnetjsfull-getting-started)
 
 ## License
 
