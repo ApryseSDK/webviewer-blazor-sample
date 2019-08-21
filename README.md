@@ -1,5 +1,5 @@
-# blazor-webviewer-sample
-First draft of integrating WebViewer into a Blazor sample application
+# WebViewer Blazor
+WebViewer is a powerful JavaScript-based PDF Library that's part of the PDFTron PDF SDK. It provides a slick out-of-the-box responsive UI that interacts with the core library to view, annotate and manipulate PDFs that can be embedded into any web project.
 
 ## Run the sample
 
