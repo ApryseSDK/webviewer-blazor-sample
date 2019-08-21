@@ -39,14 +39,14 @@ initWebViewer: function () {
     WebViewer({
         path: 'WebViewer/lib',
         initialDoc: 'https://pdftron.s3.amazonaws.com/downloads/pl/demo-annotated.pdf', // replace with your own PDF file
-        fullAPI: true
++        fullAPI: true
     }, viewerElement).then((instance) => {
         // call APIs here
     })
 }
 ```
 
-You can refer to this [guide for more information](https://www.pdftron.com/documentation/web/guides/pdfnetjsfull-getting-started)
+You can refer to this [guide for more information](https://www.pdftron.com/documentation/web/guides/pdfnetjsfull-getting-started).
 
 ## Contributing
 
