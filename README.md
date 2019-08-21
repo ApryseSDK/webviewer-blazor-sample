@@ -33,7 +33,7 @@ See [API documentation](https://www.pdftron.com/documentation/web/guides/ui/apis
 
 PDFNetJS Full is a complete browser side PDF SDK, unlocking viewing, parsing and editing of PDF files. To enable full API, you can modify constructor in `wwwroot/js/webviewerScripts.js`:
 
-```
+```diff
 initWebViewer: function () {
     const viewerElement = document.getElementById('viewer');
     WebViewer({
