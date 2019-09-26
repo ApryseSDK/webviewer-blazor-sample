@@ -1,5 +1,4 @@
 using System;
-using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -11,7 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using BlazorWebViewerServer.Data;
-using Microsoft.AspNetCore.ResponseCompression;
+using System.IO;
 using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.Extensions.FileProviders;
 
@@ -49,26 +48,12 @@ namespace BlazorWebViewerServer
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
-
-            app.UseRouting();
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapBlazorHub<App>(selector: "app");
-                endpoints.MapFallbackToPage("/_Host");
-            });
-
             var provider = new FileExtensionContentTypeProvider();
-            // Add new MIME type mappings
             provider.Mappings[".res"] = "application/octet-stream";
             provider.Mappings[".pexe"] = "application/x-pnacl";
             provider.Mappings[".nmf"] = "application/octet-stream";
             provider.Mappings[".mem"] = "application/octet-stream";
             provider.Mappings[".wasm"] = "application/wasm";
-            
-            app.UseStaticFiles();
-
             app.UseStaticFiles(new StaticFileOptions
             {
                 FileProvider = new PhysicalFileProvider(
@@ -76,10 +61,15 @@ namespace BlazorWebViewerServer
                     ContentTypeProvider = provider
             });
 
-            app.UseDirectoryBrowser(new DirectoryBrowserOptions
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
+
+            app.UseRouting();
+
+            app.UseEndpoints(endpoints =>
             {
-                FileProvider = new PhysicalFileProvider(
-                    Path.Combine(Directory.GetCurrentDirectory(), "wwwroot"))
+                endpoints.MapBlazorHub();
+                endpoints.MapFallbackToPage("/_Host");
             });
         }
     }

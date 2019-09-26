@@ -11,12 +11,11 @@
     <base href="~/" />
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
     <link href="css/site.css" rel="stylesheet" />
-    <script src="WebViewer/lib/webviewer.min.js"></script>
+    <script src="lib/webviewer.min.js"></script>
 </head>
 <body>
     <app>
-        @* Remove the following line of code to disable prerendering *@
-        @(await Html.RenderStaticComponentAsync<App>())
+        @(await Html.RenderComponentAsync<App>(RenderMode.ServerPrerendered))
     </app>
 
     <script src="_framework/blazor.server.js"></script>
