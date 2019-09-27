@@ -8,19 +8,20 @@ This repo is specifically designed for any users interested in integrating WebVi
 
 ## Initial setup
 
-Before you begin, make sure your development environment includes [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0).
+Before you begin, make sure your development environment includes [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0) and [Node.js](https://nodejs.org/en/).
 
 ## Install
 
 ```
 git clone https://github.com/PDFTron/webviewer-blazor-sample.git
 cd webviewer-blazor-sample
+npm install
 ```
 
 ## Run
 
 ```
-dotnet run
+npm start
 ```
 
 Navigate to `https://localhost:5001/webviewer`
@@ -37,7 +38,7 @@ PDFNetJS Full is a complete browser side PDF SDK, unlocking viewing, parsing and
 initWebViewer: function () {
     const viewerElement = document.getElementById('viewer');
     WebViewer({
-        path: 'WebViewer/lib',
+        path: 'lib',
         initialDoc: 'https://pdftron.s3.amazonaws.com/downloads/pl/demo-annotated.pdf', // replace with your own PDF file
 +        fullAPI: true
     }, viewerElement).then((instance) => {
