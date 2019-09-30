@@ -1,0 +1,17 @@
+{
+  "name": "webviewer-blazor-sample",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "dotnet run",
+    "postinstall": "npm run download-webviewer",
+    "download-webviewer": "npx @pdftron/webviewer-downloader --webviewerLocation wwwroot/lib"
+  },
+  "devDependencies": {
+    "@pdftron/webviewer-downloader": "^1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "PDFTron Systems Inc."
+}
