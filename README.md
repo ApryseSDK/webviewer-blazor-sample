@@ -6,6 +6,10 @@
 
 This repo is specifically designed for any users interested in integrating WebViewer into a Blazor project. This project was integrated using the [Blazor server-sided application template](https://docs.microsoft.com/en-us/aspnet/core/blazor/get-started?view=aspnetcore-3.0&tabs=visual-studio).
 
+## Demo
+
+You can explore all of the functionality in our [showcase](https://www.pdftron.com/webviewer/demo/).
+
 ## Initial setup
 
 Before you begin, make sure your development environment includes [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0) and [Node.js](https://nodejs.org/en/).
