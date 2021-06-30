@@ -12,7 +12,7 @@ You can explore all of the functionality in our [showcase](https://www.pdftron.c
 
 ## Initial setup
 
-Before you begin, make sure your development environment includes [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0) and [Node.js](https://nodejs.org/en/).
+Before you begin, make sure your development environment includes [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet/3.1) and [Node.js](https://nodejs.org/en/).
 
 ## Install
 
